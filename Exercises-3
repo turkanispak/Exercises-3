@@ -1,0 +1,111 @@
+//QUESTION 1
+/*
+#include <stdio.h>
+#include <math.h>
+#define pi 3.14
+
+int main(void)
+{
+	double a, b, c, A, B, C, radA, radB, radC;
+
+	printf("Enter the value of corner a: ");
+	scanf("%lf", &a);
+
+	printf("Enter the angle value of corner a: ");
+	scanf("%lf", &A);
+	printf("Enter the angle value of corner b: ");
+	scanf("%lf", &B);
+	printf("Enter the angle value of corner c: ");
+	scanf("%lf", &C);
+
+	radA = (A*pi) / 180;
+	radB = (B*pi) / 180;
+	radC = (C*pi) / 180;
+
+	b = (a / sin(radA))*sin(radB);
+	c = (a / sin(radA))*sin(radC);
+
+	printf("\nValue of B is %.2lf and value of C is %.2lf\n", b, c);
+
+	return 0;
+}
+*/
+
+//QUESTION 2
+/*
+#include <stdio.h>
+#include <math.h>
+#define euler 2,71828
+
+int main(void)
+{
+	double P0, r, P;
+	printf("Enter starting population: ");
+	scanf("%lf", &P0);
+	printf("Enter rate of growth in percent: ");
+	scanf("%lf", &r);
+	r = r / 100;
+
+	P = P0 + pow((euler), (r*10));
+	printf("\nFinal population after 10 years %lf", P);
+
+	return 0;
+}
+*/
+
+//QUESTION 3
+/*
+#include <stdio.h>
+int main(void)
+{
+	int temperature;
+	printf("Input temperature ");
+	scanf("%d", &temperature);
+	if (temperature >= 10)
+		printf("The weather is normal\n");
+	else
+		printf("The weather is cold\n");
+
+	return 0;
+}
+*/
+
+//QUESTION 4
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	int number, original;
+	printf("Enter number ");
+	scanf("%d", &number);
+	original = number;
+	if (number % 2 == 0)
+		printf("Number is even\n");
+	else if (original % 2 == 1)
+		printf("Number is odd\n");
+
+	return 0;
+}
+*/
+
+//QUESTION 5
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	int dist, cond;
+	printf("Enter the distance: ");
+	scanf("%d", &dist);
+	printf("Enter the weather condition: ");
+	scanf("%d", &cond);
+
+	if (cond == 1)
+		printf("In a sunny day, you will go %d km in %d hours",dist,(dist/90));
+	else if (cond == 0)
+		printf("In a rainy day, you will go %d km in %d hours",dist,(dist/70));
+
+	return 0;
+}
+*/
